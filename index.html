@@ -95,19 +95,31 @@
                 <h5>Add the service that you provide to your patients.</h5>
                 <button type="button" class="serviceBtn">Add New Service</button>
 
-
-
-                <div class="container bg-white p-4 rounded shadow">
-                  <!-- Active Services Count -->
-                  <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="activeServices d-flex justify-content-between align-items-center mb-3">
                       
-                      <h4>Active Services: <span class="badge text-bg-secondary">5 Services</span></h4>
-                      <input type="text" class="form-control search-box" placeholder="Search...">
-                  </div>
+                  <h5>Active Services: <span class=" services badge ">5 Services</span></h5>
+                  
+              </div>
+              <hr>
+
+                <div class="container p-4 rounded shadow">
+                  <!-- Active Services Count -->
+                  
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <i class="bi bi-search me-3"></i>
+                    </div>
+                    <div>
+                        <i class="bi bi-filter me-3"></i>
+                        <i class="bi bi-arrow-down-up me-3"></i>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+                </div>
+                  <hr>
           
                   <!-- Table -->
                   <div class="table-responsive">
-                      <table class="table table-hover border">
+                      <table class="table  border">
                           <thead>
                               <tr>
                                   <th><input type="checkbox"></th>
@@ -123,24 +135,33 @@
                           <tbody>
                               <tr>
                                   <td><input type="checkbox"></td>
-                                  <td><img src="liver.png" alt="Liver Test" class="img-fluid" width="40"></td>
+                                  <td><img src="images/bio.webp" alt="Liver Test" class="img-fluid" width="40"></td>
                                   <td>Biochemistry</td>
                                   <td>Liver Function Test</td>
                                   <td>$165.00</td>
-                                  <td><span class="status-active">Active</span></td>
+                                  <td>
+                                    <button type="button" class="btn active-btn">
+                                        <span class="status-indicator"></span> Active
+                                    </button>
+                                </td>
+                                
                                   <td class="action-buttons">
                                     <a href="#" class=""><img src="images/edit.png"></a>
-                                      <a href="#" class=" me-2"><img src="images/trash-01.png"</a>
+                                      <a href="#" class="me-2"><img src="images/trash-01.png"></a>
                                       
                                   </td>
                               </tr>
                               <tr>
                                   <td><input type="checkbox"></td>
-                                  <td><img src="renal.png" alt="Renal Test" class="img-fluid" width="40"></td>
+                                  <td><img src="images/bio.webp" alt="Renal Test" class="img-fluid" width="40"></td>
                                   <td>Biochemistry</td>
                                   <td>Renal Function Test</td>
                                   <td>$130.00</td>
-                                  <td><span class="status-active">Active</span></td>
+                                  <td>
+                                    <button type="button" class="btn active-btn">
+                                        <span class="status-indicator"></span> Active
+                                    </button>
+                                </td>
                                   <td class="action-buttons">
                                     <a href="#" class=""><img src="images/edit.png"></a>
                                     <a href="#" class=" me-2"><img src="images/trash-01.png"</a>
@@ -148,9 +169,16 @@
                               </tr>
                           </tbody>
                       </table>
+                      
                   </div>
               </div>
-          
+              <hr>
+              <div class="pagination-container">
+                <i class="bi bi-arrow-left-square"></i>
+                <span class="pageNum">1</span>
+                <i class="bi bi-arrow-right-square"></i>
+            </div>
+            
             </div>
         </div>
     </div>

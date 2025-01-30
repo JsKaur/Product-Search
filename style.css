@@ -49,33 +49,115 @@
     background-color: #007E7C;
     border-radius: 8px;
     border:#007E7C;
-    padding:16px 32px;
+    padding:10px 32px;
     color:white;
+    margin-left:36px;
+    margin-top:10px;
+}
+.activeServices{
+    margin-left:34px;
+    margin-top:15px;
+   
 }
 
-.table thead {
-    background-color: #f8f9fa;
+th,td{
+    background-color: transparent !important;
 }
+
+
 .table th {
     position: relative;
     cursor: pointer;
+   color: #717171;
+
 }
 .table th::after {
     
     font-size: 0.8rem;
     color: gray;
 }
-.status-active {
-    background-color: #d4edda;
-    color: #155724;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
+
 .action-buttons {
     font-size: 1.2rem;
 }
 .search-box {
     max-width: 300px;
+}
+
+h2{
+    color: #007E7C;
+    margin-top:17px;
+    margin-left:36px;
+}
+
+.activeServices h5{
+    color: #717171;
+    line-height:28px;
+
+}
+h5{
+    margin-top:13px;
+    margin-left:36px;
+}
+
+.services{
+    color: #6941C6;
+    border:1px solid #E9EAEB;
+    border-radius: 16px;
+
+}
+
+.activeBtn{
+    background: white;
+    padding:5px;
+    border-radius:6px;
+    
+}
+
+
+.activeBtn i {
+    font-size: 2.2rem; /* Adjust size as needed */
+    color:#1A9C9A;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;  /* Centers items horizontally */
+    align-items: center;      /* Aligns items vertically */
+    gap: 10px;                /* Spaces out the elements */
+            /* Adjust if needed */
+}
+
+.pagination-container i {
+    font-size: 24px;          /* Adjust icon size */
+    cursor: pointer;          /* Makes it clickable */
+    color: #ccc;             /* Adjust icon color */
+}
+
+.pagination-container i:hover {
+    color: #000;              /* Darken on hover */
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    background-color: #1A9C9A; /* Green status dot */
+    border-radius: 50%;
+}
+
+.active-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;  /* Adjust spacing between dot and text */
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light border */
+    color: #333; /* Dark text */
+    padding: 5px 12px;
+    border-radius: 20px; /* Rounded corners */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.pageNum{
+    font-weight:bold;
 }

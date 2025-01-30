@@ -1,0 +1,81 @@
+.navbar{
+    background-color:  #1A9C9A;
+}
+
+.logo{
+    height:48px;
+    width:162px;
+    margin-top:14px;
+    margin-left:36px;
+}
+
+.search-container {
+    position: relative;
+    left:120%;
+    height:auto;
+    width:450px;
+}
+
+.search-input {
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 35px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.icon{
+    padding:14px;
+}
+
+.nav-link {
+    color:  #717171 !important; 
+}
+
+.bottomMenu{
+    position:relative;
+    top:70px;
+}
+
+.serviceBtn{
+    background-color: #007E7C;
+    border-radius: 8px;
+    border:#007E7C;
+    padding:16px 32px;
+    color:white;
+}
+
+.table thead {
+    background-color: #f8f9fa;
+}
+.table th {
+    position: relative;
+    cursor: pointer;
+}
+.table th::after {
+    
+    font-size: 0.8rem;
+    color: gray;
+}
+.status-active {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.action-buttons {
+    font-size: 1.2rem;
+}
+.search-box {
+    max-width: 300px;
+}

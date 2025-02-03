@@ -175,17 +175,18 @@
                               <li><a class="dropdown-item" href="#" >Image</a></li>
                               <li><a class="dropdown-item" href="#" >Category</a></li>
                               <li><a class="dropdown-item" href="#" >Service name</a></li>
-                              <!-- <li><a class="dropdown-item" href="#" >Cost</a></li> -->
-                              <li class="dropdown"><a class="dropdown-item " href="#" data-bs-toggle="dropdown" aria-expanded="false" >Cost</a></li>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  
-                                  <select id="sortOrder" class="form-select mx-2" >
-                                    <option value="asc">Lowest - Highest</option>
-                                    <option value="desc">Highest - Lowest</option>
-                                  </select>
-                                </li>
-                              </ul>
+                              
+                              <li class="dropdown-submenu">
+                                <a class="dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cost</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <select id="sortOrder" class="form-select mx-2">
+                                            <option value="asc">Lowest - Highest</option>
+                                            <option value="desc">Highest - Lowest</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </li>
 
 <!-- Sorting Modal -->
 <div class="modal fade" id="sortModal" tabindex="-1" aria-labelledby="sortModalLabel" aria-hidden="true">
@@ -350,6 +351,7 @@
     
     
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

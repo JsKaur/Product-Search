@@ -1,0 +1,179 @@
+.navbar{
+    background-color:  #1A9C9A;
+}
+
+.logo{
+    height:48px;
+    width:162px;
+    margin-top:14px;
+    margin-left:36px;
+}
+
+.search-container {
+    position: relative;
+    left:120%;
+    height:auto;
+    width:450px;
+}
+
+.search-input {
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 35px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+
+.icon{
+    padding:14px;
+}
+
+/* ------navbar---------------------- */
+
+.nav-link {
+    color:  #717171 !important; 
+}
+
+.bottomMenu{
+    position:relative;
+    top:70px;
+}
+
+
+h2{
+    color: #007E7C;
+    margin-top:17px;
+    margin-left:36px;
+}
+
+h5{
+    margin-top:13px;
+    margin-left:36px;
+}
+
+.activeBtn{
+    background: white;
+    padding:5px;
+    border-radius:6px;
+    
+}
+
+
+.activeBtn i {
+    font-size: 2.2rem; /* Adjust size as needed */
+    color:#1A9C9A;
+}
+
+.active-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;  /* Adjust spacing between dot and text */
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light border */
+    color: #333; /* Dark text */
+    padding: 4px 10px;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.completed {
+    width: 8px;
+    height: 8px;
+    background-color: #1A9C9A; /* Green status dot */
+    border-radius: 50%;
+}
+
+.refunded{
+    width: 8px;
+    height: 8px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.failed{
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.pending{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(241, 241, 2);
+    border-radius: 50%;
+}
+
+.invoice{
+    border:2px solid #1A9C9A;
+    color:#1A9C9A;
+    font-weight:500;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+.expandIcon{
+    padding-left:18px;
+}
+
+.pageNum{
+    font-weight:bold;
+    padding:6px;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;  /* Centers items horizontally */
+    align-items: center;      /* Aligns items vertically */
+    gap: 10px;                /* Spaces out the elements */
+            /* Adjust if needed */
+}
+
+.pagination-container i {
+    font-size: 24px;          /* Adjust icon size */
+    cursor: pointer;          /* Makes it clickable */
+    color: #ccc;             /* Adjust icon color */
+}
+
+.pagination-container i:hover {
+    color: #000;              /* Darken on hover */
+}
+
+#search-bar {
+    position: absolute; 
+    top: 383px; 
+    left: 284px;
+    right: 0;
+    display: flex;
+    
+    z-index: 10; /* Make sure the search bar is above the table */
+    padding: 5px;
+  }
+
+
+  #search-bar input {
+    max-width: 300px; /* Limit width */
+    margin-top: 10px; /* Space between search bar and table headers */
+  }
+
+  .table th {
+    position: relative;
+    cursor: pointer;
+   color: #717171;
+
+}
+.table th::after {
+    
+    font-size: 0.8rem;
+    color: gray;
+}

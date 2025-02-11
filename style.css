@@ -164,7 +164,7 @@ h5{
 
 #search-bar {
     position: absolute; 
-    top: 383px; 
+    top: 360px; 
     left: 284px;
     right: 0;
     display: flex;
@@ -186,3 +186,4 @@ h5{
 hr{
     margin-top:0;
 }
+

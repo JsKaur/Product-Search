@@ -95,7 +95,7 @@
 
             <div class="col py-3 bg-light">
                 <h2>Transactions</h2>
-                <h5>Add the service that you provide to your patients.</h5>
+                <h5 class="addService">Add the service that you provide to your patients.</h5>
 
                 <div class="container p-4 rounded shadow">
                   <!-- Active Services Count -->
@@ -296,60 +296,97 @@
                         
                           </tbody>
                       </table>
-                      <!-- Scrollable Modal (Placed Outside the Table) -->
+                      <!-- Scrollable Modal  -->
                       <div class="modal fade" id="expandModal" tabindex="-1" aria-labelledby="expandModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="expandModalLabel">Transaction Details</h5>
+                              <div class="icon-container">
+                                <div class="left-icons">
+                                    <i class="bi bi-chevron-up"></i>
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                                <div class="right-icons">
+                                    <i class="bi bi-three-dots-vertical"></i>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                      <label for="pName">Patient Name</label>
-                                      <input type="text" id="pName"/>
-
-                                      <label for="email">Email</label>
-                                      <input type="email" id="email"/>
-
-                                      <label for="sName">Service name</label>
-                                      <input type="text" id="sName">
-
-                                      <label for="date">Date</label>
-                                      <input type="text" id="date"/>
-
-                                      <label for="time">Time</label>
-                                      <input type="text" id="time"/>
-
-                                      <label for="cost">Total Cost (GHS)</label>
-                                      <input type="text" id="cost"/>
-
-                                      <label for="payment">Payment Method</label>
-                                      <input type="text" id="payment"/>
-
-                                      <label for="providerName">Provider Name/ID</label>
-                                      <input type="text" id="providerName"/>
-
-                                      <label for="status">Status</label>
-                                      <select name="status" id="status">
-                                        <option value="Completed">Completed</option>
-                                        <option value="Pending">Pending</option>
-                                        <option value="Failed">Failed</option>
-                                        <option value="Refunded">Refunded</option>
-                                        </select>
-
-                                      
-                                        <label for="invoice">Invoie Number</label>
-                                        <input type="text" id="invoice"/>
-
-                                        <label for="notes">Notes</label>
-                                      <input type="text" id="notes"/>
-                                      
-                                    </form>
+                            </div>
+                
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="expandModalLabel">Transaction # T1234-5678-9012-3456</h5>
+                                      <button type="button" class=" sendInvoice">Send Invoice</button>
+                                  
+                                    
                                 </div>
+                                <div class="modal-body">
+                                  <form>
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="pName" class="form-label m-0" style="min-width: 140px;">Patient Name:</label>
+                                          <input type="text" class="form-control" id="pName" value="Akosua Mensah">
+                                      </div>
+                  
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="email" class="form-label m-0" style="min-width: 140px;">Email:</label>
+                                          <input type="email" class="form-control" id="email" value="a.mensah@gmail.com">
+                                      </div>
+                  
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="sName" class="form-label m-0" style="min-width: 140px;">Service Name:</label>
+                                          <input type="text" class="form-control" id="sName" value="Random Blood Sugar, Lipid Profile">
+                                      </div>
+                  
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="date" class="form-label m-0" style="min-width: 140px;">Date:</label>
+                                          <input type="text" class="form-control" id="date" value="2025-01-17">
+                                          
+                                      </div>
+
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                        <label for="time" class="form-label m-0" style="min-width: 140px;">Time:</label>
+                                        <input type="text" class="form-control" id="time" value="17:43">
+                                    </div>
+                  
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="cost" class="form-label m-0" style="min-width: 140px;">Total Cost (GHS):</label>
+                                          <input type="text" class="form-control" id="cost" value="545.00">
+                                      </div>
+                  
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="payment" class="form-label m-0" style="min-width: 140px;">Payment Method:</label>
+                                          <input type="text" class="form-control" id="payment" value="M-Pesa">
+                                      </div>
+                  
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="providerName" class="form-label m-0" style="min-width: 140px;">Provider Name/ID:</label>
+                                          <input type="text" class="form-control" id="providerName" value="Dr. Agyapong (L003)">
+                                      </div>
+                  
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="status" class="form-label m-0" style="min-width: 140px;">Status:</label>
+                                          <select class="form-select" id="status">
+                                              <option value="Completed" selected>Complete</option>
+                                              <option value="Pending">Pending</option>
+                                              <option value="Failed">Failed</option>
+                                              <option value="Refunded">Refunded</option>
+                                              
+                                          </select>
+                                      </div>
+                  
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="invoice" class="form-label m-0" style="min-width: 140px;">Invoice Number:</label>
+                                          <input type="text" class="form-control" id="invoice" value="INV-98765">
+                                      </div>
+                  
+                                      <div class="d-flex align-items-center gap-2 mb-2">
+                                          <label for="notes" class="form-label m-0" style="min-width: 140px;">Notes:</label>
+                                          <input type="text" class="form-control" id="notes" value="Patient requested urgent results">
+                                      </div>
+                                  </form>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
+                    
                   </div>
                   
               </div>

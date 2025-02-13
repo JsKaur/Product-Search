@@ -55,7 +55,7 @@ h2{
     margin-left:36px;
 }
 
-h5{
+.addService{
     margin-top:13px;
     margin-left:36px;
 }
@@ -177,3 +177,36 @@ h5{
     font-size: 0.8rem;
     color: gray;
 }
+
+.modal-content{
+    width:640px;
+
+}
+
+.sendInvoice{
+    color:white;
+    background:#007E7C;
+    border:none;
+    border-radius: 6px;
+    padding:4px 16px;
+    margin-left:125px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between; /* Pushes left and right sections apart */
+    align-items: center;
+    padding: 10px;
+}
+
+.left-icons {
+    display: flex;
+    gap: 8px; /* Adjust spacing between chevrons */
+}
+
+.right-icons {
+    display: flex;
+    gap: 10px; /* Adjust spacing between three dots and close button */
+    align-items: center;
+}
+
